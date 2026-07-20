@@ -2,22 +2,43 @@
 
 Contact Book app built with React, Redux Toolkit, and mockapi.io.
 
-## Setup
+## Налаштування mockapi.io
 
-1. Create a backend on [mockapi.io](https://mockapi.io/) with a `/contacts` resource (fields: `name`, `number`).
-2. Copy your endpoint URL into `.env`:
+1. Зареєструйтесь на [mockapi.io](https://mockapi.io/) через GitHub.
+2. Створіть новий проєкт.
+3. Додайте ресурс **contacts** з полями:
+   - `name` — String
+   - `number` — String
+4. Скопіюйте URL ендпоінту з dashboard (формат: `https://YOUR_ID.mockapi.io/contacts`).
+
+## Локальний запуск
+
+1. Створіть файл `.env` у корені проєкту:
 
 ```
-VITE_API_BASE_URL=https://YOUR_PROJECT_ID.mockapi.io/contacts
+VITE_API_BASE_URL=https://YOUR_ID.mockapi.io/contacts
 ```
 
-3. Install dependencies and run the app:
+2. Встановіть залежності та запустіть:
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Deploy
+## Деплой на Vercel
 
-Deploy the project to [Vercel](https://vercel.com/) and add the `VITE_API_BASE_URL` environment variable in project settings.
+1. Імпортуйте репозиторій на [vercel.com](https://vercel.com/).
+2. У **Settings → Environment Variables** додайте:
+   - Name: `VITE_API_BASE_URL`
+   - Value: `https://YOUR_ID.mockapi.io/contacts`
+3. Перезапустіть деплой (**Redeploy**).
+
+> Якщо бачите `Error: Request failed with status code 500`, це означає, що URL бекенду не налаштований або вказаний неправильний ID проєкту mockapi.io.
+
+## Здача домашньої роботи
+
+Надайте два посилання:
+
+- вихідні файли: GitHub репозиторій
+- робоча сторінка: URL деплою на Vercel

@@ -13,3 +13,17 @@
   color: #cf1322;
   margin-bottom: 16px;
 }
+
+.setup {
+  margin-bottom: 16px;
+  padding: 12px 16px;
+  border: 1px solid #ffd591;
+  border-radius: 4px;
+  background-color: #fff7e6;
+}
+
+.setup code {
+  padding: 2px 4px;
+  background-color: #fff;
+  border-radius: 3px;
+}
